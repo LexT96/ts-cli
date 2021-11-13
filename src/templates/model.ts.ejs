@@ -1,0 +1,5 @@
+export default interface <%= props.name %> {
+<%= props.properties.map((prop) => 
+`\t${prop.name}: ${prop.type}`
+).join(',\n') %>,
+}

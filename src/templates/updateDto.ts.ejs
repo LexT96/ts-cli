@@ -1,0 +1,5 @@
+export default interface Update<%= pascalCase(props.name) %>Dto {
+<%= props.properties.map((prop) => 
+`\treadonly ${prop.name}: ${prop.type}`
+).join(',\n') %>,
+}
